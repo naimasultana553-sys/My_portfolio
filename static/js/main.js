@@ -120,16 +120,26 @@ document.addEventListener('DOMContentLoaded', () => {
         let originalText = line.dataset.value;
         if (!originalText) return;
 
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*";
+
+        const colorize = (text) => {
+            return text
+                .replace(/\b(document|window|localStorage|const|if|new|function|return|fetch|then|forEach)\b/g, '<span class="code-keyword">$1</span>')
+                .replace(/('.*?'|".*?")/g, '<span class="code-string">$1</span>');
+        };
+
         setInterval(() => {
-            line.innerText = originalText
+            const scrambled = originalText
                 .split("")
                 .map((letter, index) => {
-                    if (letter === " " || letter === "_" || letter === "." || Math.random() > 0.05) {
+                    if (letter === " " || letter === "_" || letter === "." || letter === "(" || letter === ")" || letter === "{" || letter === "}" || Math.random() > 0.05) {
                         return letter;
                     }
                     return letters[Math.floor(Math.random() * letters.length)];
                 })
                 .join("");
+            
+            line.innerHTML = colorize(scrambled);
         }, 150);
     });
 });
