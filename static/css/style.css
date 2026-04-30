@@ -375,20 +375,20 @@ ul {
     -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
 }
 
-.code-keyword { color: #A855F7; } /* Purple */
-.code-string { color: #EF4444; } /* Red */
-.code-comment { color: #94A3B8; font-style: italic; opacity: 0.6; }
-.code-tag { color: #C084FC; } /* Light Purple */
-.code-num { color: #F87171; } /* Light Red */
+.code-keyword { color: #D833FF !important; font-weight: 700; } /* Vibrant Purple */
+.code-string { color: #FF2D2D !important; font-weight: 700; } /* Vibrant Red */
+.code-comment { color: #94A3B8; font-style: italic; opacity: 0.5; }
+.code-tag { color: #E066FF !important; }
+.code-num { color: #FF5C5C !important; }
 
 .hacker-line {
-    font-size: 0.7rem;
-    font-weight: 400;
-    color: #FFFFFF; /* White base */
-    margin-bottom: 0.2rem;
-    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 0.3rem;
+    font-family: 'Fira Code', monospace;
     white-space: nowrap;
-    opacity: 0.85;
+    opacity: 1;
 }
 
 .hacker-scroll {
