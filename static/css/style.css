@@ -375,21 +375,21 @@ ul {
     -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
 }
 
+.code-keyword { color: #A855F7; } /* Purple */
+.code-string { color: #EF4444; } /* Red */
+.code-comment { color: #94A3B8; font-style: italic; opacity: 0.6; }
+.code-tag { color: #C084FC; } /* Light Purple */
+.code-num { color: #F87171; } /* Light Red */
+
 .hacker-line {
     font-size: 0.7rem;
     font-weight: 400;
-    color: #D1D5DB;
+    color: #FFFFFF; /* White base */
     margin-bottom: 0.2rem;
     font-family: 'Fira Code', 'Consolas', monospace;
     white-space: nowrap;
-    opacity: 0.8;
+    opacity: 0.85;
 }
-
-.code-keyword { color: #C678DD; }
-.code-string { color: #98C379; }
-.code-comment { color: #5C6370; font-style: italic; }
-.code-tag { color: #61AFEF; }
-.code-num { color: #D19A66; }
 
 .hacker-scroll {
     animation: scrollCodeVertical 25s linear infinite;
