@@ -13,6 +13,10 @@
     --transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.highlight {
+    color: var(--primary-color);
+}
+
 html {
     font-size: 13px;
     scroll-behavior: smooth;
