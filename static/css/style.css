@@ -412,23 +412,24 @@ ul {
 }
 
 .hacker-line {
-    font-size: 1.6rem;
-    font-weight: 900;
+    font-size: 0.7rem;
+    font-weight: 500;
     color: #FFF;
-    text-shadow: 0 0 12px rgba(168, 85, 247, 0.8);
-    margin-bottom: 1.5rem;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 3px;
+    text-shadow: 0 0 5px rgba(168, 85, 247, 0.3);
+    margin-bottom: 0.35rem;
+    font-family: 'Fira Code', monospace;
+    letter-spacing: 0.5px;
     white-space: nowrap;
+    opacity: 0.9;
 }
 
 .hacker-line:nth-child(even) {
     color: #A855F7;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .hacker-scroll {
-    animation: scrollCodeVertical 10s linear infinite;
+    animation: scrollCodeVertical 20s linear infinite;
 }
 
 .center-profile-wrapper {
