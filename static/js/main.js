@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const colorize = (text) => {
             return text
-                .replace(/\b(document|window|localStorage|const|if|new|function|return|fetch|then|forEach)\b/g, '<span class="code-keyword">$1</span>')
+                .replace(/\b(document|window|localStorage|const|let|var|if|else|new|function|return|fetch|then|forEach|addEventListener|getElementById|querySelector|setAttribute|getAttribute|IntersectionObserver)\b/g, '<span class="code-keyword">$1</span>')
                 .replace(/('.*?'|".*?")/g, '<span class="code-string">$1</span>');
         };
 
