@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naima Sultana | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <nav class="navbar">
+        <div class="nav-brand">Port<span class="highlight">folio</span>
+            <div class="hanging-cat">
+                <i class="fas fa-cat"></i>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-container container">
+            <!-- Centered Profile and Text -->
+            <div class="center-profile-wrapper fade-in-up">
+                <img src="static/img/profile.jpg.jpeg" alt="Naima Sultana" class="round-profile-img">
+                <h1>Naima Sultana</h1>
+                <h2 class="fade-in-up" style="color: #FFF; animation-delay: 0.4s;">I'm Naima Sultana, a Machine Learning researcher and CSE student building intelligent, user-centric applications.</h2>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Projects</a>
+                    <a href="static/uploads/cv.pdf" class="btn btn-outline">CV / Resume</a>
+                </div>
+            </div>
+
+            <!-- 3D Rotating Laptop on the side -->
+            <div class="hero-img-wrapper fade-in-up">
+                <div class="profile-img-container">
+                    <div class="laptop-wrapper">
+                        <img src="https://www.pngmart.com/files/1/Laptop-PNG-Transparent-Image.png" alt="Laptop" class="laptop-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </header>
+
+    <section id="about" class="about-section fade-in">
+        <div class="container">
+            <div class="section-title">
+                <h2>About <span class="highlight">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Detail-oriented Computer Science & Engineering (CSE) student with a strong interest in research, software project analysis, and problem-solving. I enjoy exploring modern application systems, learning Python and frontend development, and applying analytical approaches to design, evaluate, and improve software solutions.</p>
+                    <div class="personal-details">
+                        <p><i class="fas fa-envelope"></i> naimasultana553@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> East Nakhalpara, Tejgaon, Dhaka</p>
+                    </div>
+                </div>
+                <div class="education-timeline">
+                    <h3>Education</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <h4>3rd Year Student, B.Sc. in Computer Science & Engineering (CSE)</h4>
+                        <p class="institution">Southeast University</p>
+                        <div class="timeline-meta">
+                            <span class="score">CGPA: 3.57</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements-section fade-in" style="margin-top: 3rem;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem; color: var(--primary-color);">Achievements & Activities</h3>
+                    <ul style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; list-style: none;">
+                        <li class="fade-in"><i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Science Fair Participant</li>
+                        <li class="fade-in"><i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Academic Volunteer</li>
+                        <li class="fade-in"><i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Class Representative (Coordination)</li>
+                    </ul>
+                </div>
+
+                <div class="languages-section fade-in" style="margin-top: 2rem;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem; color: var(--primary-color);">Languages</h3>
+                    <div class="skill-tags">
+                        <span class="fade-in">Bangla (Native)</span>
+                        <span class="fade-in">English (Fluent)</span>
+                        <span class="fade-in">Hindi (Intermediate)</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section fade-in">
+        <div class="container">
+            <div class="section-title">
+                <h2>My <span class="highlight">Skills</span></h2>
+            </div>
+            <div class="skills-grid-modern">
+                <div class="skill-group">
+                    <h4><i class="fas fa-microchip"></i> SE Knowledge</h4>
+                    <div class="skill-tags">
+                        <span>Requirement Analysis</span>
+                        <span>Process Model Selection</span>
+                        <span>Sprint & Task Planning</span>
+                        <span>Risk & ROI Analysis</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4><i class="fas fa-code"></i> Languages</h4>
+                    <div class="skill-tags">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Java (OOP)</span>
+                        <span>Python (Learning)</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4><i class="fas fa-laptop-code"></i> Tools</h4>
+                    <div class="skill-tags">
+                        <span>VS Code</span>
+                        <span>Android Studio</span>
+                        <span>Code Blocks</span>
+                        <span>MS Office Suite</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section fade-in">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem;">
+            <div class="section-title" style="text-align: left; margin: 0; flex: 1;">
+                <h2>Latest <span class="highlight">Projects</span></h2>
+                <p style="max-width: 300px; margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;">A selection of my recent work in AI simulation and software development.</p>
+            </div>
+            <div class="projects-grid" style="flex: 1.5;">
+                <!-- NavPath -->
+                <div class="project-card glassmorphism">
+                    <div class="project-img">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #3B82F6, #1D4ED8); border-radius: 50%;">
+                            <i class="fas fa-route" style="color: white;"></i>
+                        </div>
+                        <div class="project-category">Software Engineering</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>NavPath System</h3>
+                        <p>Research, requirement analysis, and ROI/Risk planning for a navigation system.</p>
+                        <div class="project-links">
+                            <span style="font-size: 0.75rem; color: var(--primary-color);">Course Project</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Battleship Game -->
+                <div class="project-card glassmorphism">
+                    <div class="project-img">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #60A5FA, #3B82F6); border-radius: 50%;">
+                            <i class="fas fa-ship" style="color: white;"></i>
+                        </div>
+                        <div class="project-category">Console Game</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Battleship Game</h3>
+                        <p>Logic design and gameplay testing for a console-based battle simulation.</p>
+                        <div class="project-links">
+                            <span style="font-size: 0.75rem; color: var(--primary-color);">Group Project</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bank & Café -->
+                <div class="project-card glassmorphism">
+                    <div class="project-img">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #93C5FD, #60A5FA); border-radius: 50%;">
+                            <i class="fas fa-coffee" style="color: white;"></i>
+                        </div>
+                        <div class="project-category">Java OOP</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Bank & Café System</h3>
+                        <p>Menu-driven management system using advanced OOP concepts in Java.</p>
+                        <div class="project-links">
+                            <span style="font-size: 0.75rem; color: var(--primary-color);">Java Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <section id="apps" class="apps-section fade-in" style="padding: 4rem 0;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem;">
+            <div class="section-title" style="text-align: left; margin: 0; flex: 1;">
+                <h2>Live <span class="highlight">Apps</span></h2>
+                <p style="max-width: 300px; margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;">Interactive AI tools and web applications I've built and deployed.</p>
+            </div>
+            <div class="projects-grid" style="flex: 1.5;">
+                <!-- Smart Text Summarizer -->
+                <div class="project-card glassmorphism">
+                    <div class="project-img">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #F59E0B, #D97706); border-radius: 50%;">
+                            <i class="fas fa-align-left" style="color: white;"></i>
+                        </div>
+                        <div class="project-category">AI App</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Smart Text Summarizer</h3>
+                        <p>An intelligent tool that condenses long articles into concise summaries using NLP.</p>
+                        <div class="project-links" style="margin-top: 1rem;">
+                            <a href="https://naimasultana553-sys.github.io/Test-summarizer/" target="_blank" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;"><i class="fas fa-external-link-alt"></i> Live App</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ImagiText AI -->
+                <div class="project-card glassmorphism">
+                    <div class="project-img">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #10B981, #059669); border-radius: 50%;">
+                            <i class="fas fa-image" style="color: white;"></i>
+                        </div>
+                        <div class="project-category">Generative AI</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ImagiText AI</h3>
+                        <p>A full-stack text-to-image application that brings words to life using AI models.</p>
+                        <div class="project-links" style="margin-top: 1rem;">
+                            <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;"><i class="fas fa-external-link-alt"></i> Live App</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- World In Motion -->
+                <div class="project-card glassmorphism">
+                    <div class="project-img">
+                        <div class="img-placeholder" style="background: linear-gradient(135deg, #8B5CF6, #6D28D9); border-radius: 50%;">
+                            <i class="fas fa-globe" style="color: white;"></i>
+                        </div>
+                        <div class="project-category">Simulation</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>World In Motion</h3>
+                        <p>An interactive, dynamic physics-based game simulation built with modern frontend technologies.</p>
+                        <div class="project-links" style="margin-top: 1rem;">
+                            <a href="https://naimasultana553-sys.github.io/World-in-Motion/" target="_blank" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;"><i class="fas fa-external-link-alt"></i> Live App</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="research-section fade-in">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem;">
+            <div class="section-title" style="text-align: left; margin: 0; flex: 1;">
+                <h2>Research <span class="highlight">Work</span></h2>
+                <p style="max-width: 300px; margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;">Advancing public health through Machine Learning and deep neural networks.</p>
+            </div>
+            <div class="research-container" style="flex: 2;">
+                <div class="research-card glassmorphism" style="display: flex; align-items: center; gap: 2rem; padding: 2rem;">
+                    <div class="research-info" style="flex: 1.2;">
+                        <span class="research-year">EfficientNet-B0</span>
+                        <h3 style="margin: 0.5rem 0;">Mosquito Classification</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+                            Developing an automated system for mosquito species classification (Aedes, Anopheles, Culex) to improve public health response.
+                        </p>
+                    </div>
+                    <div class="research-diagram" style="flex: 1;">
+                        <img src="static/img/mosquito_diagram.png.png" alt="Diagram" style="width: 100%; border-radius: 0.5rem; filter: invert(0.9) hue-rotate(180deg) brightness(1.2);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="connect" class="connect-section fade-in">
+        <div class="container" style="text-align: center;">
+            <div class="section-title">
+                <h2>Let's <span class="highlight">Connect</span></h2>
+            </div>
+            <div class="social-links-grid">
+                <a href="https://github.com/naimasultana553-sys" target="_blank" class="social-link-card glassmorphism">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/naima-sultana-76a678395/" target="_blank" class="social-link-card glassmorphism">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://www.facebook.com/obshorajahan.obshorajahan/" target="_blank" class="social-link-card glassmorphism">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="mailto:naimasultana553@gmail.com" class="social-link-card glassmorphism">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Naima Sultana. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="static/js/main.js"></script>
+</body>
+</html>
