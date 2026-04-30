@@ -9,7 +9,7 @@
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="static/css/style.css?v=3">
+    <link rel="stylesheet" href="static/css/style.css?v=4">
 </head>
 <body>
     <!-- Theme Toggle -->
@@ -49,47 +49,35 @@
                 </div>
             </div>
 
-            <!-- Scrolling Code Window on the side -->
-            <div class="hero-img-wrapper fade-in-up">
-                <div class="code-window glassmorphism">
-                    <div class="code-header">
-                        <div class="terminal-dots">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <div class="terminal-title">mosquito_classifier.py</div>
-                    </div>
+            <!-- Transparent VS Code style Editor -->
+            <div class="hero-img-wrapper fade-in-up" style="opacity: 0.8; right: 0;">
+                <div class="code-window editor-style">
                     <div class="code-body">
                         <div class="code-scroll hacker-scroll">
-                            <div class="hacker-line" data-value="document.addEventListener('DOMContentLoaded', () => {">document.addEventListener('DOMContentLoaded', () => {</div>
-                            <div class="hacker-line" data-value="  const themeToggle = document.getElementById('theme-toggle');">  const themeToggle = document.getElementById('theme-toggle');</div>
-                            <div class="hacker-line" data-value="  const icon = themeToggle.querySelector('i');">  const icon = themeToggle.querySelector('i');</div>
-                            <div class="hacker-line" data-value="  const savedTheme = localStorage.getItem('theme');">  const savedTheme = localStorage.getItem('theme');</div>
-                            <div class="hacker-line" data-value="  const systemDark = window.matchMedia('(prefers-dark)');">  const systemDark = window.matchMedia('(prefers-dark)');</div>
-                            <div class="hacker-line" data-value="  if (savedTheme === 'dark' || systemDark) {">  if (savedTheme === 'dark' || systemDark) {</div>
-                            <div class="hacker-line" data-value="    document.body.setAttribute('data-theme', 'dark');">    document.body.setAttribute('data-theme', 'dark');</div>
+                            <div class="hacker-line" data-value="document.addEventListener('DOMContentLoaded', () => {"><span class="code-keyword">document</span>.addEventListener(<span class="code-string">'DOMContentLoaded'</span>, () => {</div>
+                            <div class="hacker-line" data-value="  const themeToggle = document.getElementById('theme-toggle');">  <span class="code-keyword">const</span> themeToggle = <span class="code-keyword">document</span>.getElementById(<span class="code-string">'theme-toggle'</span>);</div>
+                            <div class="hacker-line" data-value="  const icon = themeToggle.querySelector('i');">  <span class="code-keyword">const</span> icon = themeToggle.querySelector(<span class="code-string">'i'</span>);</div>
+                            <div class="hacker-line" data-value="  const savedTheme = localStorage.getItem('theme');">  <span class="code-keyword">const</span> savedTheme = <span class="code-keyword">localStorage</span>.getItem(<span class="code-string">'theme'</span>);</div>
+                            <div class="hacker-line" data-value="  const systemDark = window.matchMedia('(prefers-dark)');">  <span class="code-keyword">const</span> systemDark = <span class="code-keyword">window</span>.matchMedia(<span class="code-string">'(prefers-dark)'</span>);</div>
+                            <div class="hacker-line" data-value="  if (savedTheme === 'dark' || systemDark) {">  <span class="code-keyword">if</span> (savedTheme === <span class="code-string">'dark'</span> || systemDark) {</div>
+                            <div class="hacker-line" data-value="    document.body.setAttribute('data-theme', 'dark');">    <span class="code-keyword">document</span>.body.setAttribute(<span class="code-string">'data-theme'</span>, <span class="code-string">'dark'</span>);</div>
                             <div class="hacker-line" data-value="  }">  }</div>
-                            <div class="hacker-line" data-value="  const observer = new IntersectionObserver((entries) => {">  const observer = new IntersectionObserver((entries) => {</div>
+                            <div class="hacker-line" data-value="  const observer = new IntersectionObserver((entries) => {">  <span class="code-keyword">const</span> observer = <span class="code-keyword">new</span> <span class="code-tag">IntersectionObserver</span>((entries) => {</div>
                             <div class="hacker-line" data-value="    entries.forEach(entry => {">    entries.forEach(entry => {</div>
-                            <div class="hacker-line" data-value="      if (entry.isIntersecting) entry.target.add('visible');">      if (entry.isIntersecting) entry.target.add('visible');</div>
+                            <div class="hacker-line" data-value="      if (entry.isIntersecting) entry.target.add('visible');">      <span class="code-keyword">if</span> (entry.isIntersecting) entry.target.add(<span class="code-string">'visible'</span>);</div>
                             <div class="hacker-line" data-value="    });">    });</div>
-                            <div class="hacker-line" data-value="  }, { threshold: 0.15 });">  }, { threshold: 0.15 });</div>
-                            <div class="hacker-line" data-value="  fetch('https://api.github.com/users/repos')">  fetch('https://api.github.com/users/repos')</div>
+                            <div class="hacker-line" data-value="  }, { threshold: 0.15 });">  }, { threshold: <span class="code-num">0.15</span> });</div>
+                            <div class="hacker-line" data-value="  fetch('https://api.github.com/users/repos')">  <span class="code-tag">fetch</span>(<span class="code-string">'https://api.github.com/users/repos'</span>)</div>
                             <div class="hacker-line" data-value="    .then(res => res.json())">    .then(res => res.json())</div>
-                            <div class="hacker-line" data-value="    .then(data => renderRepos(data));">    .then(data => renderRepos(data));</div>
-                            <div class="hacker-line" data-value="  function renderRepos(repos) {">  function renderRepos(repos) {</div>
+                            <div class="hacker-line" data-value="    .then(data => renderRepos(data));">    .then(data => <span class="code-tag">renderRepos</span>(data));</div>
+                            <div class="hacker-line" data-value="  function renderRepos(repos) {">  <span class="code-keyword">function</span> <span class="code-tag">renderRepos</span>(repos) {</div>
                             <div class="hacker-line" data-value="    repos.forEach(repo => {">    repos.forEach(repo => {</div>
-                            <div class="hacker-line" data-value="      const card = document.createElement('div');">      const card = document.createElement('div');</div>
-                            <div class="hacker-line" data-value="      card.className = 'repo-card glass';">      card.className = 'repo-card glass';</div>
+                            <div class="hacker-line" data-value="      const card = document.createElement('div');">      <span class="code-keyword">const</span> card = <span class="code-keyword">document</span>.createElement(<span class="code-string">'div'</span>);</div>
+                            <div class="hacker-line" data-value="      card.className = 'repo-card glass';">      card.className = <span class="code-string">'repo-card glass'</span>;</div>
                             <div class="hacker-line" data-value="      container.appendChild(card);">      container.appendChild(card);</div>
                             <div class="hacker-line" data-value="    });">    });</div>
                             <div class="hacker-line" data-value="  }">  }</div>
                             <div class="hacker-line" data-value="});">});</div>
-                            <!-- Duplicate for seamless scroll -->
-                            <div class="hacker-line" data-value="document.addEventListener('DOMContentLoaded', () => {">document.addEventListener('DOMContentLoaded', () => {</div>
-                            <div class="hacker-line" data-value="  const themeToggle = document.getElementById('theme-toggle');">  const themeToggle = document.getElementById('theme-toggle');</div>
-                            <div class="hacker-line" data-value="  const icon = themeToggle.querySelector('i');">  const icon = themeToggle.querySelector('i');</div>
                         </div>
                     </div>
                 </div>

@@ -411,25 +411,35 @@ ul {
     100% { transform: translateY(-50%); }
 }
 
+.editor-style {
+    width: 450px;
+    height: 500px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+}
+
 .hacker-line {
     font-size: 0.7rem;
-    font-weight: 500;
-    color: #FFF;
-    text-shadow: 0 0 5px rgba(168, 85, 247, 0.3);
-    margin-bottom: 0.35rem;
-    font-family: 'Fira Code', monospace;
-    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #D1D5DB;
+    margin-bottom: 0.2rem;
+    font-family: 'Fira Code', 'Consolas', monospace;
     white-space: nowrap;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
-.hacker-line:nth-child(even) {
-    color: #A855F7;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-}
+.code-keyword { color: #C678DD; }
+.code-string { color: #98C379; }
+.code-comment { color: #5C6370; font-style: italic; }
+.code-tag { color: #61AFEF; }
+.code-num { color: #D19A66; }
 
 .hacker-scroll {
-    animation: scrollCodeVertical 20s linear infinite;
+    animation: scrollCodeVertical 25s linear infinite;
 }
 
 .center-profile-wrapper {
