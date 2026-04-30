@@ -411,11 +411,25 @@ ul {
     100% { transform: translateY(-50%); }
 }
 
-.code-line { color: #D1D5DB; margin-bottom: 0.2rem; white-space: nowrap; }
-.code-keyword { color: #C678DD; }
-.code-string { color: #98C379; }
-.code-comment { color: #5C6370; font-style: italic; }
-.code-tag { color: #E06C75; }
+.hacker-line {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #FFF;
+    text-shadow: 0 0 12px rgba(168, 85, 247, 0.8);
+    margin-bottom: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+    white-space: nowrap;
+}
+
+.hacker-line:nth-child(even) {
+    color: #A855F7;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.hacker-scroll {
+    animation: scrollCodeVertical 10s linear infinite;
+}
 
 .center-profile-wrapper {
     z-index: 1;

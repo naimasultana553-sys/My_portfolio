@@ -111,4 +111,25 @@ document.addEventListener('DOMContentLoaded', () => {
             githubSection.style.display = 'none'; // Hide if no username
         }
     }
+
+    // --- Hacker Text Effect ---
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*";
+    const hackerLines = document.querySelectorAll(".hacker-line");
+
+    hackerLines.forEach(line => {
+        let originalText = line.dataset.value;
+        if (!originalText) return;
+
+        setInterval(() => {
+            line.innerText = originalText
+                .split("")
+                .map((letter, index) => {
+                    if (letter === " " || letter === "_" || letter === "." || Math.random() > 0.05) {
+                        return letter;
+                    }
+                    return letters[Math.floor(Math.random() * letters.length)];
+                })
+                .join("");
+        }, 150);
+    });
 });
